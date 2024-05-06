@@ -1,48 +1,17 @@
 {
-    mecpus = {
-        name = "ME CPU Control",
-        desc = "Program to control the applied energistics crafting cpus.",
-        path = "mecpus",
-        version = "1.0.0",
-        startup = "shell.run('mecpus/mecpus.lua')",
-        files = {
-            {link="https://raw.githubusercontent.com/Seniorendi/Lua-Projects/master/src/ME%20Cpus/mecpus.cfg", name = "cfg", type = "config"},
-            {link="https://raw.githubusercontent.com/Seniorendi/Lua-Projects/master/src/ME%20Cpus/mecpus.lua", name = "mecpus.lua", type = "program"},
-            {link="https://raw.githubusercontent.com/Seniorendi/Lua-Projects/master/src/api/bars.lua", name = "bars.lua", type = "api"},
-        },
-        needs = {
-            monitor = true,
-            modem = true,
-        }
-    },
-    meautocraft = {
+    meautocraft2 = {
         name = "ME Autocrafting Autocraft",
         desc = "Autocrafts specific items. Alternative for crafting cards.",
         path = "meautocraft",
         version = "1.0.0",
-        startup = "shell.run('meautocraft/meautocraft.lua')",
+        startup = "shell.run('meautocraft2/meautocraft.lua')",
         files = {
-            {link="https://raw.githubusercontent.com/Seniorendi/Lua-Projects/master/src/ME%20Autocraft/meautocraft.lua", name = "meautocraft.lua", type = "program"},
-        },
-        needs = {
-            monitor = true,
-            modem = true,
-        }
-    },
-    medrives = {
-        name = "ME Drives Panel",
-        desc = "Control and inspect your drives",
-        path = "medrives",
-        version = "1.0.0",
-        startup = "shell.run('medrives/medrives.lua')",
-        files = {
-            {link="https://raw.githubusercontent.com/Seniorendi/Lua-Projects/master/src/ME%20Drives/medrives.lua", name = "medrives.lua", type = "program"},
-            {link="https://raw.githubusercontent.com/Seniorendi/Lua-Projects/master/src/api/bars.lua", name = "bars.lua", type = "api"},
-
+            {link="https://raw.githubusercontent.com/trsommer/advancedPeripherals/master/src/ME%20Autocraft2/meautocraft.lua", name = "meautocraft.lua", type = "program"},
         },
         needs = {
             monitor = true,
             modem = true,
         }
     }
+
 }

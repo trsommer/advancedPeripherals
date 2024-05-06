@@ -7,19 +7,17 @@
 --- DateTime: 23.5.2023 03:00 MDT
 ---
 
-label = "Automatic"
+label = "Base Control Panel"
 
 me = peripheral.find("meBridge") --MeBridge
 mon = peripheral.find("monitor") --Monitor
+local monX, monY
 
 --List of the items which should be checked
 --Display Name - Technical Name - Minimum Amount
 meItems = {
-    [1] = {"Oak Planks", "minecraft:oak_planks", "180"},
-    [2] = {"Diorite", "minecraft:polished_diorite", "100"},
-    [3] = {"Wind Generator", "mekanismgenerators:wind_generator", "20"},
-    [4] = {"Glass", "minecraft:glass", "500"},
-    [5] = {"Stick", "minecraft:stick", "100"}
+    [1] = {"Fluix Crystals", "ae2:fluix_crystal", "200"},
+    [2] = {"Charged Certus Quartz", "ae2:charged_certus_quartz_crystal", "200"}
 }
 
 function checkMe(checkName, name, low)
